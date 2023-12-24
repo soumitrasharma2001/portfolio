@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumitra Sharma - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#8780E5;
+            background-size:cover;
+        }
+        a img{
+          margin-right: 10px;
+        }
+      .flex{
+        display:flex;
+        flex-wrap:wrap;
+        gap:1.5rem;
+      }
+      .card-container {
+          display: flex;
+          gap: 20px; /* Adjust the gap between cards */
+          
+          
+      }
+      .card {
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        width:300px;
+      }
+      
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        section p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      .btn {
+          position: relative;
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          background-color: #4CAF50; /* Green */
+          color: white;
+          border: 1px solid #4CAF50;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: auto;
+          align-self: flex-start;
+      }
+      
+      .btn:hover {
+          background-color: #45a049; /* Darker green on hover */
+      }
+      .contact-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .contact-item {
+          
+          margin-right: 20px;
+      }
+
+      .contact-item img {
+          width: 30px; /* Adjust the size of the icons */
+          margin-right: 10px;
+      }
+
+      .contact-item p {
+          margin: 0;
+      }
+      .crystal{
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        width:cover;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      * { color:white; text-decoration: none;
+      }
+      /* Media query for screens 600 pixels and below */
+      @media screen and (max-width: 600px) {
+        .text {
+            display: block; /* Stack the text vertically */
+            margin-bottom: 10px; /* Increase space between stacked texts for smaller screens */
+        }
+        .card-container {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+        }
+        .card {
+            flex: 0 0 auto;
+            width: 200px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Add a smooth transition effect */
+            color:#000000;
+        }
+      }
+     
+      /* Media query for screens 768 pixels and below */
+
+      @media screen and (max-width: 768px) {
+          header {
+              padding: 10px;
+          }
+
+          nav a {
+              padding: 10px;
+          }
+          
+      }
+      
+      /* Media query for screens 1024 pixels and below */
+
+      @media screen and (max-width: 1024px) {
+          .header {
+              font-size: 18px;
+          }
+        
+      }
+    </style>
+  </head>
+</head>
+<body>
+    <header>
+        <h1>Soumitra Sharma</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="#home" class="text">Home</a>
+        <a href="#projects" class="text">Projects</a>
+        <a href="#certificates" class="text">Certificates</a>
+        <a href="#contact" class="text">Contact</a>
+    </nav>
+
+    <section id="home" class="crystal" style="margin:30px">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Highly passionate and eager to learn about modern day 
+        technologies and implement them to solve real world 
+        problems. Relish to meet new people and work in
+        challenging environment to support organization and 
+        grow personally.</p>
+    </section>
+
+    <section id="projects" class="crystal" style="margin:30px">
+        <h2>Projects</h2>
+        <div class="card-container">
+            <div class="card flex crystal">
+                <h2><img src="images/icons8-dice-66.png">Rolling Die Simulation</h2>
+                <p>A rolling die simulation is a computer-based experiment that emulates the process of rolling a standard six-sided die (dice) to generate random numbers.</p>
+                <a href="https://soumitrasharma2001.github.io/rollingDieSimulator/" target="_blank" class="btn">See Project</a>
+            </div>
+
+            <div class="card flex crystal">
+                <h2><img src="images/icons8-plywood-64.png">Plywood Cost Calculator</h2>
+                <p>The calculator offer the option to switch between units of measurement, such as square feet or square meters for sheet size.</p>
+                <a href="https://soumitrasharma2001.github.io/plywoodCostCalculator/" target="_blank" class="btn">See Project</a>
+            </div>
+            <!-- Add more cards as needed -->
+
+        </div>
+          
+    </section>
+    
+    <section id="certificates" class="crystal" style="margin:30px">
+        <h2>Certificates</h2>
+        <div class="card-container">
+        <div class="card flex crystal">
+          <!-- Card content goes here -->
+          <h2><img src="images/600px-HackerRank_Icon-1000px (1).png"> Problem Solving (Basic)</h2>
+          <a class="btn" href="https://www.hackerrank.com/certificates/c2c2faf0d10c" target="_blank" class="btn">See credentials</a>
+        </div>
+        <div class="card flex crystal">
+          <!-- Card content goes here -->
+          <h2><img src="images/600px-HackerRank_Icon-1000px (1).png"> Javascript (Basic)</h2>
+          <a href="https://www.hackerrank.com/certificates/a22c92e821d8" target="_blank" class="btn">See credentials</a>
+        </div>
+        <div class="card flex crystal">
+          <!-- Card content goes here -->
+          <h2><img src="images/64px-Coursera-Logo_600x600.svg.png"> HTML, CSS and Javascript for Web Developers </h2>
+          <a href="https://www.coursera.org/account/accomplishments/verify/NVZQ5Z3ULAUQ" target="_blank" class="btn">See credentials</a>
+        </div>
+
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+      <a href="mailto:saumi.sharma10@gmail.com" target="_blank"><img src="images/icons8-business-48.png"></a>
+       <a href="https://wa.me/+917440837470" target="_blank"><img src="images/icons8-whatsapp-48.png"></a>
+       <a href="https://www.linkedin.com/in/soumitra-sharma-b25822210" target="_blank"><img src="images/icons8-linkedin---in-logo-used-for-professional-networking,-48.png"></a>
+    </section>
+
+    <div style="display:flex;justify-content: center;">
+        <p>&copy; 2023 Soumitra Sharma - Portfolio. All rights reserved.</p>
+    </div>
+</body>
+</html>
